@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Board from './components/board';
 import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+//import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<Board />, document.getElementById('root'));
+
+//registerServiceWorker();
