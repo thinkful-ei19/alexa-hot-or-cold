@@ -11,5 +11,5 @@ export default function List() {
                 <li>10</li>
             </ul>
         </div>
-    )
+    );
 }

@@ -8,5 +8,5 @@ export default function NavBar() {
             <a href="">What?</a>
             <a href="">New Game</a>
         </nav>
-    )
-};
+    );
+}

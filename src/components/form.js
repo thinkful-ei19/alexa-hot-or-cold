@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './form.css'
+import './form.css';
 
 export default function Form() {
     return (
@@ -9,5 +9,5 @@ export default function Form() {
             <input type="text" value="Enter your guess"></input>
             <button type="Submit">Guess</button>
         </form>
-    )
+    );
 }

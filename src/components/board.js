@@ -16,6 +16,6 @@ export default class Board extends React.Component {
                 <Form />
                 <List />
             </section>
-        )
+        );
     }
-};
+}
