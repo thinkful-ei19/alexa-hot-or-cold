@@ -8,7 +8,7 @@ import './header.css';
 export default function Header(props) {
     return (
         <header>
-            <TopNav add={props.toggleDisplay}/>
+            <TopNav add={props.toggleDisplay} reset={props.resetToggle}/>
             {/* <InfoModal /> */}
             <h1>HOT or COLD</h1>
         </header>

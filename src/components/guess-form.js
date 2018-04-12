@@ -8,6 +8,7 @@ export default function GuessForm(props) {
             event.preventDefault();
 
             let inputValue = event.target.userGuess.value;
+            event.target.userGuess.value = ''
             
             {props.addGuess(inputValue)}
 

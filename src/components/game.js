@@ -50,11 +50,20 @@ export default class Game extends React.Component{
         });
     }
 
+    resetDisplay() {
+        this.setState({
+            guesses: [],
+            answer: Math.floor((Math.random() * 100) + 1),
+            feedback: 'Make your guess',
+        });
+    }
+
 render() {
     // console.log(this.state.display)
+    console.log(this.state.answer);
     return (
         <div>
-            <Header toggleDisplay={(event) => this.toggleDisplay(event)}/>
+            <Header toggleDisplay={(event) => this.toggleDisplay(event)} resetToggle={(event) => this.resetDisplay(event)}/>
             <GuessSection add={(value) => this.addGuess(value)} feedback={this.state.feedback} />
             <GuessCount count={this.state.guesses.length} />
             <GuessList guesses={this.state.guesses} />
